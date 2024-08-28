@@ -1,0 +1,28 @@
+{
+  "name": "TesteTecnico",
+  "version": "1.0.6",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "cy:test": "npx cypress run --config video=false",
+    "cy:open": "npx cypress open --e2e -b chrome",
+    "cy:dash": "npx cypress run --record --parallel --key {secrets_dash}"
+  },
+  "keywords": [
+    "cypress",
+    "tests",
+    "gherkin",
+    "github-actions"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "20.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "2.2.0",
+    "cypress": "13.6.3"
+  },
+  "devDependencies": {
+    "eslint-plugin-cypress": "^2.15.1",
+    "faker-br": "^0.4.1"
+  }
+}
